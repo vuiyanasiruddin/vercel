@@ -49,10 +49,13 @@
 
     <script>
         function showAlert() {
-            const msg = document.getElementById('message');
-            msg.innerHTML = "Success! Your code is running in the browser.";
-            console.log("Button clicked at: " + new Date().toLocaleTimeString());
-        }
+    const msg = document.getElementById('message');
+    
+    // Instead of text, we insert an image tag
+    msg.innerHTML = '<img src="Signature-Nasir.jpg" alt="Signature" style="max-width: 100%; height: auto; border: 1px solid #ccc; margin-top: 10px;">';
+    
+    console.log("Signature displayed at: " + new Date().toLocaleTimeString());
+}
     </script>
 </body>
 </html>
