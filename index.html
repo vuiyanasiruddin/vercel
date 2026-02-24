@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Office App</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+        }
+        h1 { color: #1a73e8; }
+        button {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover { background-color: #1557b0; }
+        #message { margin-top: 20px; font-weight: bold; color: #d93025; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Office Developer Mode</h1>
+        <p>This app was built without installing any software!</p>
+        <button onclick="showAlert()">Click Me</button>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        function showAlert() {
+            const msg = document.getElementById('message');
+            msg.innerHTML = "Success! Your code is running in the browser.";
+            console.log("Button clicked at: " + new Date().toLocaleTimeString());
+        }
+    </script>
+</body>
+</html>
