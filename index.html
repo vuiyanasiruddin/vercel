@@ -3,59 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+    <title>The Future of Wealth | Built on Mobile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Times New Roman', serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f2f5;
-        }
-        .card {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            text-align: center;
-            max-width: 600px;
-        }
-        h1 { color: #1a73e8; }
-        button {
-            background-color: #1a73e8;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        button:hover { background-color: #1557b0; }
-        #message { margin-top: 20px; font-weight: bold; color: #d93025; }
+        body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body>
+<body class="bg-black text-white antialiased">
 
-    <div class="card">
-        <h1>My First Website</h1><br>
-        <img src="Nasir.jpg" alt="Nasir's Photo" width="400" height="400">
-        <p>Using Github and Vercel</p>
-        <p>This app was built without installing any software!</p>
-        <button onclick="showAlert()">Click Me</button>
-        <div id="message"></div>
-    </div>
+    <nav class="p-6 flex justify-between items-center border-b border-gray-800">
+        <div class="text-2xl font-bold tracking-tighter text-blue-500">Billionaire.OS</div>
+        <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg font-medium transition">Get Started</button>
+    </nav>
 
-    <script>
-        function showAlert() {
-    const msg = document.getElementById('message');
-    
-    // Instead of text, we insert an image tag
-    msg.innerHTML = '<img src="Signature-Nasir.jpg" alt="Signature" style="max-width: 100%; height: auto; border: 1px solid #ccc; margin-top: 10px;">';
-    
-    console.log("Signature displayed at: " + new Date().toLocaleTimeString());
-}
-    </script>
+    <header class="py-20 px-6 text-center">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+            Build the <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Future</span> from your Phone.
+        </h1>
+        <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+            Stop scrolling. Start building. We provide the systems to turn digital leverage into generational wealth.
+        </p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <a href="#" class="bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200 transition">Join the Waitlist</a>
+            <a href="#" class="border border-gray-700 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-800 transition">Watch Demo</a>
+        </div>
+    </header>
+
+    <section class="py-12 bg-gray-900 border-y border-gray-800">
+        <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
+            <div>
+                <div class="text-3xl font-bold text-white">10M+</div>
+                <div class="text-gray-500 text-sm">Active Users</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-white">$2.4B</div>
+                <div class="text-gray-500 text-sm">Value Created</div>
+            </div>
+            <div class="hidden md:block">
+                <div class="text-3xl font-bold text-white">99.9%</div>
+                <div class="text-gray-500 text-sm">Uptime</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-600 text-sm">
+        <p>&copy; 2026 Billionaire.OS. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
